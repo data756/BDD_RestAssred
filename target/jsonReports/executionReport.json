@@ -1,0 +1,490 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-13T16:55:20.111Z",
+        "line": 15,
+        "name": "Verify if Student is successfully enrolled",
+        "description": "",
+        "id": "validating-student-enrollment-project-curd-operations.;verify-if-student-is-successfully-enrolled;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2994500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "student information : \"87\",\"Robert\",\"Fernandez\",\"5-D\", \"Sri Lanka\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"87\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"Robert\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Fernandez\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"5-D\"",
+                  "offset": 48
+                },
+                {
+                  "val": "\"Sri Lanka\"",
+                  "offset": 55
+                }
+              ],
+              "location": "stepdefinition.stepDefinitions.student_information(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c201\u003e but was \u003c202\u003e.\n\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:92)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$spec(ValidatableResponseImpl.groovy)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.spec(ValidatableResponseImpl.groovy:76)\r\n\tat io.restassured.internal.ValidatableResponseImpl.spec(ValidatableResponseImpl.groovy)\r\n\tat stepdefinition.stepDefinitions.user_calls_api_with_http_request(stepDefinitions.java:54)\r\n\tat ✽.user calls \"addstudent\" api with \"post\" http request(file:///D:/Testing/Eclipse/workspace/studentenrollment/src/test/java/features/studentenrollment.feature:8)\r\n",
+              "duration": 1358458100,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user calls \"addstudent\" api with \"post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"addstudent\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"post\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinition.stepDefinitions.user_calls_api_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "resonse status should be 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinition.stepDefinitions.resonse_status_should_be(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 998900,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "verify the response content with fetched backend database record",
+            "match": {
+              "location": "stepdefinition.stepDefinitions.verify_the_response_content_with_fetched_backend_database_record()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@StudentEnrollment"
+          },
+          {
+            "name": "@addStudent"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-13T16:55:21.529Z",
+        "line": 19,
+        "name": "Verify fetch student infromation functionality",
+        "description": "",
+        "id": "validating-student-enrollment-project-curd-operations.;verify-fetch-student-infromation-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 265288800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "you have enrolled student information : 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefinition.stepDefinitions.you_have_enrolled_student_information(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e but was \u003c500\u003e.\n\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:92)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$spec(ValidatableResponseImpl.groovy)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.spec(ValidatableResponseImpl.groovy:76)\r\n\tat io.restassured.internal.ValidatableResponseImpl.spec(ValidatableResponseImpl.groovy)\r\n\tat stepdefinition.stepDefinitions.user_calls_api_with_http_request(stepDefinitions.java:58)\r\n\tat ✽.user calls \"fetchStudent\" api with \"get\" http request(file:///D:/Testing/Eclipse/workspace/studentenrollment/src/test/java/features/studentenrollment.feature:21)\r\n",
+              "duration": 50865600,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "user calls \"fetchStudent\" api with \"get\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"fetchStudent\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"get\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepdefinition.stepDefinitions.user_calls_api_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 986600,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "resonse status should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinition.stepDefinitions.resonse_status_should_be(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "verify the response content with fetched backend database record",
+            "match": {
+              "location": "stepdefinition.stepDefinitions.verify_the_response_content_with_fetched_backend_database_record()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@StudentEnrollment"
+          },
+          {
+            "name": "@fetchstudent"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-13T16:55:21.850Z",
+        "line": 35,
+        "name": "Verify update student infromation functionality",
+        "description": "",
+        "id": "validating-student-enrollment-project-curd-operations.;verify-update-student-infromation-functionality;;2",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "student information : \"2\",\"Auliana\",\"Gomez\",\"11-D\", \"Colombia\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"Auliana\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"Gomez\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"11-D\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"Colombia\"",
+                  "offset": 52
+                }
+              ],
+              "location": "stepdefinition.stepDefinitions.student_information(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e but was \u003c500\u003e.\n\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:92)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$spec(ValidatableResponseImpl.groovy)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.spec(ValidatableResponseImpl.groovy:76)\r\n\tat io.restassured.internal.ValidatableResponseImpl.spec(ValidatableResponseImpl.groovy)\r\n\tat stepdefinition.stepDefinitions.user_calls_api_with_http_request(stepDefinitions.java:62)\r\n\tat ✽.user calls \"updatestudent\" api with \"put\" http request(file:///D:/Testing/Eclipse/workspace/studentenrollment/src/test/java/features/studentenrollment.feature:29)\r\n",
+              "duration": 31947400,
+              "status": "failed"
+            },
+            "line": 29,
+            "name": "user calls \"updatestudent\" api with \"put\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"updatestudent\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"put\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepdefinition.stepDefinitions.user_calls_api_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "resonse status should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinition.stepDefinitions.resonse_status_should_be(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "verify the response content with fetched backend database record",
+            "match": {
+              "location": "stepdefinition.stepDefinitions.verify_the_response_content_with_fetched_backend_database_record()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@StudentEnrollment"
+          },
+          {
+            "name": "@updatestudent"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-13T16:55:21.888Z",
+        "line": 39,
+        "name": "Verify the delete student information functionality",
+        "description": "",
+        "id": "validating-student-enrollment-project-curd-operations.;verify-the-delete-student-information-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3991400,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "you have enrolled student information in payload : 11",
+            "match": {
+              "arguments": [
+                {
+                  "val": "11",
+                  "offset": 51
+                }
+              ],
+              "location": "stepdefinition.stepDefinitions.you_have_enrolled_student_information_in_payload(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e but was \u003c500\u003e.\n\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:92)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$spec(ValidatableResponseImpl.groovy)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.spec(ValidatableResponseImpl.groovy:76)\r\n\tat io.restassured.internal.ValidatableResponseImpl.spec(ValidatableResponseImpl.groovy)\r\n\tat stepdefinition.stepDefinitions.user_calls_api_with_http_request(stepDefinitions.java:65)\r\n\tat ✽.user calls \"deletestudent\" api with \"delete\" http request(file:///D:/Testing/Eclipse/workspace/studentenrollment/src/test/java/features/studentenrollment.feature:41)\r\n",
+              "duration": 24930200,
+              "status": "failed"
+            },
+            "line": 41,
+            "name": "user calls \"deletestudent\" api with \"delete\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"deletestudent\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"delete\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepdefinition.stepDefinitions.user_calls_api_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "resonse status should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinition.stepDefinitions.resonse_status_should_be(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": "verify the response content with fetched backend database record",
+            "match": {
+              "location": "stepdefinition.stepDefinitions.verify_the_response_content_with_fetched_backend_database_record()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@StudentEnrollment"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-13T16:55:21.924Z",
+        "line": 46,
+        "name": "Verify the fetch students information by class information.",
+        "description": "",
+        "id": "validating-student-enrollment-project-curd-operations.;verify-the-fetch-students-information-by-class-information.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2991700,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "you have student class information : \"4-C\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"4-C\"",
+                  "offset": 37
+                }
+              ],
+              "location": "stepdefinition.stepDefinitions.you_have_student_class_information(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 23964200,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "user calls \"fetchStudents\" api with \"get\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"fetchStudents\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"get\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepdefinition.stepDefinitions.user_calls_api_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 997600,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "resonse status should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinition.stepDefinitions.resonse_status_should_be(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 24931200,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "verify the response content with fetched backend database record",
+            "match": {
+              "location": "stepdefinition.stepDefinitions.verify_the_response_content_with_fetched_backend_database_record()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@StudentEnrollment"
+          }
+        ]
+      }
+    ],
+    "name": "Validating Student Enrollment project CURD operations.",
+    "description": "",
+    "id": "validating-student-enrollment-project-curd-operations.",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/studentenrollment.feature",
+    "tags": [
+      {
+        "name": "@StudentEnrollment",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,161 @@
+Request method:	POST
+Request URI:	http://localhost:8080/addstudent
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 85,
+    "firstName": "Robert",
+    "lastName": "Fernandez",
+    "classInfo": "5-D",
+    "nationality": "Sri Lanka"
+}
+HTTP/1.1 201 
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 16
+Date: Mon, 13 Sep 2021 16:52:10 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+Student is added
+Request method:	GET
+Request URI:	http://localhost:8080/fetchStudent?id=12
+Proxy:			<none>
+Request params:	<none>
+Query params:	id=12
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 13 Sep 2021 16:52:10 GMT
+Connection: close
+
+{
+    "timestamp": "2021-09-13T16:52:10.857+00:00",
+    "status": 500,
+    "error": "Internal Server Error",
+    "path": "/fetchStudent"
+}
+Request method:	PUT
+Request URI:	http://localhost:8080/updatestudent/9?id=12
+Proxy:			<none>
+Request params:	id=12
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 9,
+    "firstName": "Auliana",
+    "lastName": "Gomez",
+    "classInfo": "11-D",
+    "nationality": "Colombia"
+}
+HTTP/1.1 500 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 13 Sep 2021 16:52:10 GMT
+Connection: close
+
+{
+    "timestamp": "2021-09-13T16:52:10.933+00:00",
+    "status": 500,
+    "error": "Internal Server Error",
+    "path": "/updatestudent/9"
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/deletestudent
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": "15"
+}
+HTTP/1.1 404 
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 44
+Date: Mon, 13 Sep 2021 16:52:10 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+Invalid Input. Please check Student id again
+Request method:	GET
+Request URI:	http://localhost:8080/fetchStudents?classInformation=4-C
+Proxy:			<none>
+Request params:	<none>
+Query params:	classInformation=4-C
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 13 Sep 2021 16:52:10 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+[
+    {
+        "id": 16,
+        "firstName": "English",
+        "lastName": "asdasdasd",
+        "classInfo": "4-C",
+        "nationality": "Maxican"
+    },
+    {
+        "id": 17,
+        "firstName": "English",
+        "lastName": "asdasdasd",
+        "classInfo": "4-C",
+        "nationality": "Maxican"
+    },
+    {
+        "id": 18,
+        "firstName": "English",
+        "lastName": "asdasdasd",
+        "classInfo": "4-C",
+        "nationality": "Maxican"
+    },
+    {
+        "id": 19,
+        "firstName": "English",
+        "lastName": "asdasdasd",
+        "classInfo": "4-C",
+        "nationality": "Maxican"
+    },
+    {
+        "id": 20,
+        "firstName": "English",
+        "lastName": "asdasdasd",
+        "classInfo": "4-C",
+        "nationality": "Maxican"
+    }
+]

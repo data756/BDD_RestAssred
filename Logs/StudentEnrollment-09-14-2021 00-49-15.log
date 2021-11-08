@@ -1,0 +1,77 @@
+Request method:	POST
+Request URI:	http://localhost:8080/addstudent
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 85,
+    "firstName": "Robert",
+    "lastName": "Fernandez",
+    "classInfo": "5-D",
+    "nationality": "Sri Lanka"
+}
+Request method:	GET
+Request URI:	http://localhost:8080/fetchStudent?id=12
+Proxy:			<none>
+Request params:	<none>
+Query params:	id=12
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	PUT
+Request URI:	http://localhost:8080/updatestudent/9?id=12
+Proxy:			<none>
+Request params:	id=12
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 9,
+    "firstName": "Auliana",
+    "lastName": "Gomez",
+    "classInfo": "11-D",
+    "nationality": "Colombia"
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/deletestudent
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": "15"
+}
+Request method:	GET
+Request URI:	http://localhost:8080/fetchStudents?classInformation=4-C
+Proxy:			<none>
+Request params:	<none>
+Query params:	classInformation=4-C
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
